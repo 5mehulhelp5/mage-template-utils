@@ -23,9 +23,9 @@ class InjectEscapeUtils
         $fileName,
         array $dictionary = []
     ): array {
-        // Add $e global variable to all templates
-        if (!isset($dictionary['e'])) {
-            $dictionary['e'] = fn(string $value) => $this->escaper->escapeHtml($value);
+        // Add $eHtml global variable to all templates
+        if (!isset($dictionary['eHtml'])) {
+            $dictionary['eHtml'] = fn(string $value) => $this->escaper->escapeHtml($value);
         }
         // Add $eUrl global variable to all templates
         if (!isset($dictionary['eUrl'])) {
@@ -35,9 +35,9 @@ class InjectEscapeUtils
         if (!isset($dictionary['eJs'])) {
             $dictionary['eJs'] = fn(string $value) => $this->escaper->escapeJs($value);
         }
-        // Add $eAttr global variable to all templates
-        if (!isset($dictionary['eAttr'])) {
-            $dictionary['eAttr'] = fn(string $value) => $this->escaper->escapeHtmlAttr($value);
+        // Add $eHtmlAttr global variable to all templates
+        if (!isset($dictionary['eHtmlAttr'])) {
+            $dictionary['eHtmlAttr'] = fn(string $value) => $this->escaper->escapeHtmlAttr($value);
         }
 
         return [$block, $fileName, $dictionary];

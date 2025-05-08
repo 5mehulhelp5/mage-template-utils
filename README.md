@@ -10,12 +10,12 @@ A Magento 2 module that introduces convenient global utilities for use in `.phtm
 
 Use simple closure aliases instead of long `$escaper` method calls:
 
-| Alias     | Equivalent                     |
-|-----------|--------------------------------|
-| `$e()`     | `$escaper->escapeHtml()`       |
-| `$eJs()`   | `$escaper->escapeJs()`         |
-| `$eUrl()`  | `$escaper->escapeUrl()`        |
-| `$eAttr()` | `$escaper->escapeHtmlAttr()`   |
+| Alias          | Equivalent                     |
+|----------------|--------------------------------|
+| `$eHtml()`     | `$escaper->escapeHtml()`       |
+| `$eJs()`       | `$escaper->escapeJs()`         |
+| `$eUrl()`      | `$escaper->escapeUrl()`        |
+| `$eHtmlAttr()` | `$escaper->escapeHtmlAttr()`   |
 
 **Example:**
 
