@@ -20,7 +20,7 @@ Use simple closure aliases instead of long `$escaper` method calls:
 **Example:**
 
 ```php
-<?= $e(__('Hello world!')) ?>
+<?= $eHtml(__('Hello world!')) ?>
 ````
 
 Instead of:
