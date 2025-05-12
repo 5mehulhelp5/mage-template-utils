@@ -65,7 +65,7 @@ Simple, secure, and saves time.
 Generate a valid CSP nonce for inline scripts:
 
 ```php
-<script nonce="<?= $eAttr($nonce) ?>">
+<script nonce="<?= $eHtmlAttr($nonce) ?>">
     // safe inline script
 </script>
 ```
